@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wisma Al-Huda — Kos Nyaman & Terjangkau di Semarang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-branch="unnes">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-arabic">وسمى الهدى</span>
+        <span class="logo-text">Wisma Al-Huda</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#fasilitas">Fasilitas</a></li>
+        <li><a href="#kamar">Kamar</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="#kontak" class="nav-cta">Hubungi Kami</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#tentang">Tentang</a>
+      <a href="#fasilitas">Fasilitas</a>
+      <a href="#kamar">Kamar</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#lokasi">Lokasi</a>
+      <a href="#kontak">Hubungi Kami</a>
+    </div>
+  </nav>
+
+  <!-- ===== BRANCH SWITCHER ===== -->
+  <div class="branch-switcher" id="branchSwitcher">
+    <span class="switcher-label">Pilih Cabang:</span>
+    <div class="switcher-pills">
+      <button class="pill active" data-branch="unnes" id="pillUnnes">
+        <span class="pill-dot"></span>
+        Cabang UNNES
+      </button>
+      <button class="pill" data-branch="unwahas" id="pillUnwahas">
+        <span class="pill-dot"></span>
+        Cabang UNWAHAS
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-pattern"></div>
+      <div class="hero-ornament hero-ornament-1"></div>
+      <div class="hero-ornament hero-ornament-2"></div>
+      <div class="hero-ornament hero-ornament-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-text" id="heroEyebrow">Kos Nyaman &amp; Terjangkau di Semarang</span>
+        <span class="eyebrow-dot"></span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-arabic">وسمى الهدى</span>
+        <span class="title-main">Wisma<br><em>Al-Huda</em></span>
+      </h1>
+      <p class="hero-sub" id="heroSub">Tempat tinggal yang nyaman, bersih, dan terjangkau dekat Kampus UNNES — Gunungpati, Semarang.</p>
+      <div class="hero-actions">
+        <a href="#kamar" class="btn btn-primary">Lihat Kamar</a>
+        <a href="#kontak" class="btn btn-secondary">WhatsApp Kami</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Cabang</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Lingkungan Aman</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Keamanan</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="hcard hcard-back">
+          <div class="hcard-inner">
+            <div class="hcard-icon" id="heroCardIcon1">🏡</div>
+            <p id="heroCardLabel1">Lingkungan Nyaman</p>
+          </div>
+        </div>
+        <div class="hcard hcard-mid">
+          <div class="hcard-inner">
+            <div class="hcard-icon">🌿</div>
+            <p>Lingkungan Asri</p>
+          </div>
+        </div>
+        <div class="hcard hcard-front">
+          <div class="hcard-inner">
+            <div class="hcard-tag" id="heroCardTag">Dekat UNNES</div>
+            <div class="hcard-icon-big">🏠</div>
+            <h3>Kamar Tersedia</h3>
+            <p class="hcard-addr" id="heroCardAddr">Sekaran, Gunungpati, Semarang</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TENTANG ===== -->
+  <section class="tentang" id="tentang">
+    <div class="container">
+      <div class="tentang-grid">
+        <div class="tentang-visual">
+          <div class="t-ornament-wrap">
+            <div class="t-ornament-ring t-ring-1"></div>
+            <div class="t-ornament-ring t-ring-2"></div>
+            <div class="t-main-box" id="tentangMainBox">
+              <div class="t-box-icon" id="tentangBoxIcon">🏡</div>
+              <p class="t-box-tagline">Rumah Kedua Anda</p>
+            </div>
+          </div>
+          <div class="t-badge-float t-badge-1" id="tentangBadge1">
+            <span>🏡</span> <span id="tentangBadge1Text">Nyaman</span>
+          </div>
+          <div class="t-badge-float t-badge-2">
+            <span>🌿</span> Asri
+          </div>
+          <div class="t-badge-float t-badge-3">
+            <span>🔒</span> Aman
+          </div>
+        </div>
+        <div class="tentang-text">
+          <div class="section-eyebrow">Tentang Kami</div>
+          <h2 class="section-title">Rumah yang Nyaman,<br><em>Hati yang Tenang</em></h2>
+          <p class="tentang-desc">Wisma Al-Huda hadir sebagai kos kosan yang mengedepankan kenyamanan, kebersihan, dan nuansa Islami yang hangat. Kami percaya bahwa tempat tinggal bukan sekadar bangunan — melainkan rumah kedua yang mendukung semangat belajar dan kehidupan sehari-hari Anda.</p>
+          <div class="tentang-points">
+            <div class="tp-item">
+              <span class="tp-icon">✦</span>
+              <div>
+                <strong>Lingkungan Kondusif</strong>
+                <p>Suasana tenang dan nyaman untuk belajar dan beristirahat</p>
+              </div>
+            </div>
+            <div class="tp-item">
+              <span class="tp-icon">✦</span>
+              <div>
+                <strong>Pengelolaan Amanah</strong>
+                <p>Dikelola oleh keluarga Muslim yang ramah dan bertanggung jawab</p>
+              </div>
+            </div>
+            <div class="tp-item">
+              <span class="tp-icon">✦</span>
+              <div>
+                <strong>Dua Lokasi Strategis</strong>
+                <p>Dekat kampus UNNES dan UNWAHAS di kawasan Gunungpati, Semarang</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FASILITAS ===== -->
+  <section class="fasilitas" id="fasilitas">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">Yang Kami Sediakan</div>
+        <h2 class="section-title">Fasilitas<br><em>Lengkap & Terjangkau</em></h2>
+      </div>
+      <div class="fasilitas-grid">
+        <div class="fas-card fas-card--big">
+          <div class="fas-icon">🛏️</div>
+          <h3>Kamar Luas & Bersih</h3>
+          <p>Kamar dirancang dengan sirkulasi udara yang baik, bersih, dan terawat setiap hari.</p>
+        </div>
+        <div class="fas-card">
+          <div class="fas-icon">📶</div>
+          <h3>WiFi Cepat</h3>
+          <p>Koneksi internet stabil untuk mendukung kegiatan belajar & kuliah online.</p>
+        </div>
+        <div class="fas-card">
+          <div class="fas-icon">🚿</div>
+          <h3>Kamar Mandi Bersih</h3>
+          <p>Fasilitas mandi yang terawat dan selalu terjaga kebersihannya.</p>
+        </div>
+        <div class="fas-card">
+          <div class="fas-icon">🔒</div>
+          <h3>Keamanan 24 Jam</h3>
+          <p>Lingkungan kos dijaga dengan sistem keamanan yang terpercaya.</p>
+        </div>
+        <div class="fas-card">
+          <div class="fas-icon">📹</div>
+          <h3>CCTV 24 Jam</h3>
+          <p>Pengawasan area kos menggunakan sistem CCTV yang aktif 24 jam untuk meningkatkan keamanan dan
+            kenyamanan penghuni setiap saat.</p>
+        </div>
+        <div class="fas-card">
+          <div class="fas-icon">🅿️</div>
+          <h3>Parkir Luas</h3>
+          <p>Area parkir kendaraan yang aman dan memadai untuk motor dan sepeda.</p>
+        </div>
+        <div class="fas-card">
+          <div class="fas-icon">💧</div>
+          <h3>Air Bersih</h3>
+          <p>Suplai air bersih yang terjamin setiap hari tanpa gangguan.</p>
+        </div>
+        <div class="fas-card">
+          <div class="fas-icon">🌿</div>
+          <h3>Taman Asri</h3>
+          <p>Lingkungan hijau dan asri yang membuat betah dan nyaman tinggal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CABANG / KAMAR ===== -->
+  <section class="kamar" id="kamar">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">Dua Pilihan Lokasi</div>
+        <h2 class="section-title">Pilih Cabang<br><em>Sesuai Kampus Anda</em></h2>
+      </div>
+
+      <!-- BRANCH CARDS -->
+      <div class="branch-cards">
+
+        <!-- UNNES CARD -->
+        <div class="branch-card branch-card--unnes" id="cardUnnes">
+          <div class="branch-card-header">
+            <div class="branch-badge bc-unnes">Cabang UNNES</div>
+            <div class="branch-theme-dots">
+              <span class="theme-dot" style="background:#2D6A4F"></span>
+              <span class="theme-dot" style="background:#52B788"></span>
+              <span class="theme-dot" style="background:#F5F0E8"></span>
+            </div>
+          </div>
+          <div class="branch-card-body">
+            <div class="branch-visual bv-unnes">
+              <div class="bv-pattern"></div>
+              <div class="bv-content">
+                <span class="bv-emoji">🌿</span>
+                <p>Hijau &amp; Sejuk</p>
+              </div>
+            </div>
+            <h3 class="branch-name">Wisma Al-Huda<br><em>UNNES</em></h3>
+            <p class="branch-tagline">Nuansa hijau alami, cocok untuk mahasiswa yang ingin suasana tenang dan asri dekat kampus UNNES.</p>
+            <div class="branch-addr">
+              <span class="addr-icon">📍</span>
+              <span>Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229</span>
+            </div>
+            <div class="branch-colors-info">
+              <span class="bci-label">Tema Warna:</span>
+              <span class="bci-val">Cream & Hijau</span>
+            </div>
+            <a href="#kontak" class="btn btn-branch btn-branch--unnes">Tanya Ketersediaan →</a>
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="branch-or">
+          <div class="or-line"></div>
+          <span class="or-text">atau</span>
+          <div class="or-line"></div>
+        </div>
+
+        <!-- UNWAHAS CARD -->
+        <div class="branch-card branch-card--unwahas" id="cardUnwahas">
+          <div class="branch-card-header">
+            <div class="branch-badge bc-unwahas">Cabang UNWAHAS</div>
+            <div class="branch-theme-dots">
+              <span class="theme-dot" style="background:#C9933A"></span>
+              <span class="theme-dot" style="background:#E8B96A"></span>
+              <span class="theme-dot" style="background:#FDF6EC"></span>
+            </div>
+          </div>
+          <div class="branch-card-body">
+            <div class="branch-visual bv-unwahas">
+              <div class="bv-pattern"></div>
+              <div class="bv-content">
+                <span class="bv-emoji">🌙</span>
+                <p>Hangat &amp; Islami</p>
+              </div>
+            </div>
+            <h3 class="branch-name">Wisma Al-Huda<br><em>UNWAHAS</em></h3>
+            <p class="branch-tagline">Nuansa cream hangat bernuansa Islami, cocok untuk mahasiswa UNWAHAS yang ingin tempat nyaman dan tenang.</p>
+            <div class="branch-addr">
+              <span class="addr-icon">📍</span>
+              <span>PERUMAHAN BUMI, Jl. Nongkosawit Raya No.4, RT.6/RW.1, Nongkosawit, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50224</span>
+            </div>
+            <div class="branch-colors-info">
+              <span class="bci-label">Tema Warna:</span>
+              <span class="bci-val">Cream & Emas</span>
+            </div>
+            <a href="#kontak" class="btn btn-branch btn-branch--unwahas">Tanya Ketersediaan →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERI ===== -->
+  <section class="galeri" id="galeri">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">Lihat Suasananya</div>
+        <h2 class="section-title">Galeri Foto<br><em>Wisma Al-Huda</em></h2>
+      </div>
+
+      <!-- Galeri Tabs -->
+      <div class="galeri-tabs">
+        <button class="gtab active" data-galeri="unnes">🌿 Cabang UNNES</button>
+        <button class="gtab" data-galeri="unwahas">🌙 Cabang UNWAHAS</button>
+      </div>
+
+      <!-- UNNES Gallery -->
+      <div class="galeri-panel active" id="galeriUnnes">
+        <div class="galeri-label galeri-label--unnes">Wisma Al-Huda — Sekaran, Gunungpati</div>
+        <div class="galeri-grid" id="gridUnnes">
+
+          <!-- Foto 1 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="tampak depan.jpg" alt="Tampak Depan Kos UNNES"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🏠</span>
+              <p>Tampak Depan</p>
+            </div>
+            <div class="galeri-caption">Tampak Depan Kos</div>
+          </div>
+
+          <!-- Foto 2 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unnes/foto2.jpg" alt="Kamar UNNES"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🛏️</span>
+              <p>Kamar Tidur</p>
+            </div>
+            <div class="galeri-caption">Kamar Tidur</div>
+          </div>
+
+          <!-- Foto 3 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unnes/foto3.jpg" alt="Kamar Mandi UNNES"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🚿</span>
+              <p>Kamar Mandi</p>
+            </div>
+            <div class="galeri-caption">Kamar Mandi</div>
+          </div>
+
+          <!-- Foto 4 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unnes/foto4.jpg" alt="Ruang Bersama UNNES"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🛋️</span>
+              <p>Ruang Bersama</p>
+            </div>
+            <div class="galeri-caption">Ruang Bersama</div>
+          </div>
+
+          <!-- Foto 5 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unnes/foto5.jpg" alt="Dapur UNNES"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🍳</span>
+              <p>Dapur Bersama</p>
+            </div>
+            <div class="galeri-caption">Dapur Bersama</div>
+          </div>
+
+          <!-- Foto 6 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unnes/foto6.jpg" alt="Lingkungan UNNES"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🌿</span>
+              <p>Lingkungan Asri</p>
+            </div>
+            <div class="galeri-caption">Lingkungan Asri</div>
+          </div>
+
+        </div>
+        <p class="galeri-hint">💡 Ganti file gambar di folder <code>foto/unnes/</code> (foto1.jpg — foto6.jpg) dengan foto asli kos Anda.</p>
+      </div>
+
+      <!-- UNWAHAS Gallery -->
+      <div class="galeri-panel" id="galeriUnwahas">
+        <div class="galeri-label galeri-label--unwahas">Wisma Al-Huda — Nongkosawit, Gunungpati</div>
+        <div class="galeri-grid" id="gridUnwahas">
+
+          <!-- Foto 1 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unwahas/foto1.jpg" alt="Tampak Depan Kos UNWAHAS"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🏠</span>
+              <p>Tampak Depan</p>
+            </div>
+            <div class="galeri-caption">Tampak Depan Kos</div>
+          </div>
+
+          <!-- Foto 2 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unwahas/foto2.jpg" alt="Kamar UNWAHAS"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🛏️</span>
+              <p>Kamar Tidur</p>
+            </div>
+            <div class="galeri-caption">Kamar Tidur</div>
+          </div>
+
+          <!-- Foto 3 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unwahas/foto3.jpg" alt="Kamar Mandi UNWAHAS"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🚿</span>
+              <p>Kamar Mandi</p>
+            </div>
+            <div class="galeri-caption">Kamar Mandi</div>
+          </div>
+
+          <!-- Foto 4 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unwahas/foto4.jpg" alt="Ruang Bersama UNWAHAS"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🛋️</span>
+              <p>Ruang Bersama</p>
+            </div>
+            <div class="galeri-caption">Ruang Bersama</div>
+          </div>
+
+          <!-- Foto 5 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unwahas/foto5.jpg" alt="Dapur UNWAHAS"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🍳</span>
+              <p>Dapur Bersama</p>
+            </div>
+            <div class="galeri-caption">Dapur Bersama</div>
+          </div>
+
+          <!-- Foto 6 -->
+          <div class="galeri-item" onclick="openLightbox(this)">
+            <img src="foto/unwahas/foto6.jpg" alt="Lingkungan UNWAHAS"
+                 onerror="this.parentElement.classList.add('galeri-placeholder'); this.style.display='none'; this.parentElement.querySelector('.galeri-placeholder-inner').style.display='flex';" />
+            <div class="galeri-placeholder-inner" style="display:none;">
+              <span>🌙</span>
+              <p>Suasana Islami</p>
+            </div>
+            <div class="galeri-caption">Suasana Islami</div>
+          </div>
+
+        </div>
+        <p class="galeri-hint">💡 Ganti file gambar di folder <code>foto/unwahas/</code> (foto1.jpg — foto6.jpg) dengan foto asli kos Anda.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox-prev" onclick="event.stopPropagation(); moveLightbox(-1)">‹</button>
+    <button class="lightbox-next" onclick="event.stopPropagation(); moveLightbox(1)">›</button>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- ===== LOKASI ===== -->
+  <section class="lokasi" id="lokasi">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">Temukan Kami</div>
+        <h2 class="section-title">Lokasi<br><em>Strategis & Mudah Dijangkau</em></h2>
+      </div>
+      <div class="lokasi-tabs">
+        <button class="ltab active" data-loc="unnes">📍 UNNES</button>
+        <button class="ltab" data-loc="unwahas">📍 UNWAHAS</button>
+      </div>
+      <div class="lokasi-content">
+        <div class="lok-panel active" id="lokUnnes">
+          <div class="lok-info">
+            <div class="lok-badge lok-badge--unnes">Cabang UNNES</div>
+            <h3>Sekaran, Gunungpati</h3>
+            <p class="lok-full-addr">Sekaran, Kec. Gn. Pati, Kota Semarang,<br>Jawa Tengah 50229</p>
+            <div class="lok-features">
+              <div class="lok-feat"><span>🎓</span> Dekat Kampus UNNES</div>
+              <div class="lok-feat"><span>🛒</span> Dekat Minimarket & Warung</div>
+              <div class="lok-feat"><span>🚌</span> Akses Transportasi Mudah</div>
+              <div class="lok-feat"><span>🕌</span> Dekat Masjid</div>
+            </div>
+            <a href="https://maps.app.goo.gl/jchVRXp97ooHoed7A" target="_blank" class="btn btn-map btn-map--unnes">Buka di Google Maps →</a>
+          </div>
+          <div class="lok-map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4000.863290889374!2d110.389975275045!3d-7.054177292948167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bd979ac7229%3A0x3dbc254f25cbc052!2sKos%20Putri%20Wisma%20Al-Huda!5e1!3m2!1sid!2sid!4v1781953180488!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="lok-panel" id="lokUnwahas">
+          <div class="lok-info">
+            <div class="lok-badge lok-badge--unwahas">Cabang UNWAHAS</div>
+            <h3>Nongkosawit, Gunungpati</h3>
+            <p class="lok-full-addr">PERUMAHAN BUMI, Jl. Nongkosawit Raya No.4,<br>RT.6/RW.1, Nongkosawit, Kec. Gn. Pati,<br>Kota Semarang, Jawa Tengah 50224</p>
+            <div class="lok-features">
+              <div class="lok-feat"><span>🎓</span> Dekat Kampus UNWAHAS</div>
+              <div class="lok-feat"><span>🛒</span> Dekat Pusat Perbelanjaan</div>
+              <div class="lok-feat"><span>🚌</span> Akses Transportasi Mudah</div>
+              <div class="lok-feat"><span>🕌</span> Dekat Masjid</div>
+            </div>
+            <a href="https://maps.app.goo.gl/MwtjKSDGR6d8KVnn7" target="_blank" class="btn btn-map btn-map--unwahas">Buka di Google Maps →</a>
+          </div>
+          <div class="lok-map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4000.7834171528475!2d110.36135169678954!3d-7.063414999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7089007e6fe32b%3A0x50a93b058b29d3a9!2sWISMA%20PUTRI%20AL%20HUDA%202!5e1!3m2!1sid!2sid!4v1781953266803!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAK ===== -->
+  <section class="kontak" id="kontak">
+    <div class="container">
+      <div class="kontak-wrap">
+        <div class="kontak-text">
+          <div class="section-eyebrow">Hubungi Kami</div>
+          <h2 class="section-title">Tertarik?<br><em>Yuk, Chat Sekarang!</em></h2>
+          <p>Kami siap menjawab pertanyaan Anda seputar ketersediaan kamar, harga, dan fasilitas. Hubungi kami via WhatsApp — cepat, mudah, dan responsif!</p>
+          <div class="kontak-info-list">
+            <div class="ki-item">
+              <span class="ki-icon">📱</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <p>+62 878-0913-4363</p>
+              </div>
+            </div>
+            <div class="ki-item">
+              <span class="ki-icon">⏰</span>
+              <div>
+                <strong>Jam Operasional</strong>
+                <p>Senin – Minggu, 07.00 – 21.00 WIB</p>
+              </div>
+            </div>
+            <div class="ki-item">
+              <span class="ki-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <p>wismaalhuda@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kontak-form-wrap">
+          <div class="kform">
+            <h3>Kirim Pesan</h3>
+            <div class="kfield">
+              <label>Nama Lengkap</label>
+              <input type="text" placeholder="Masukkan nama Anda..." />
+            </div>
+            <div class="kfield">
+              <label>No. WhatsApp</label>
+              <input type="text" placeholder="08xx-xxxx-xxxx" />
+            </div>
+            <div class="kfield">
+              <label>Pilih Cabang</label>
+              <select>
+                <option>Cabang UNNES (Sekaran)</option>
+                <option>Cabang UNWAHAS (Nongkosawit)</option>
+              </select>
+            </div>
+            <div class="kfield">
+              <label>Pesan</label>
+              <textarea placeholder="Tulis pertanyaan atau pesan Anda..."></textarea>
+            </div>
+            <button class="btn btn-wa" onclick="sendWhatsApp()">
+              <span>💬</span> Kirim via WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-arabic">وسمى الهدى</span>
+          <h4>Wisma Al-Huda</h4>
+          <p>Kos nyaman, bersih, dan Islami di Gunungpati, Semarang. Dua cabang strategis dekat kampus UNNES dan UNWAHAS.</p>
+          <div class="footer-socials">
+            <a href="#" class="fsoc" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="fsoc" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+            <a href="#" class="fsoc" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Navigasi</h5>
+          <a href="#tentang">Tentang Kami</a>
+          <a href="#fasilitas">Fasilitas</a>
+          <a href="#kamar">Pilih Kamar</a>
+          <a href="#lokasi">Lokasi</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+        <div class="footer-cabang">
+          <h5>Cabang Kami</h5>
+          <div class="fcabang">
+            <strong>🌿 UNNES</strong>
+            <p>Sekaran, Kec. Gn. Pati, Kota Semarang 50229</p>
+          </div>
+          <div class="fcabang">
+            <strong>🌙 UNWAHAS</strong>
+            <p>Jl. Nongkosawit Raya No.4, Nongkosawit, Kec. Gn. Pati, Semarang 50224</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Wisma Al-Huda. Semua Hak Dilindungi.</p>
+        <p class="footer-tagline">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
